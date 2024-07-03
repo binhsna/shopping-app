@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Video livestream -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo_android"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_android"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.banhang"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.MeetingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EnterOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ResetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DangNhapFullActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DangNhapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.YouTubeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChitietSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity> <!-- Nhận tin nhắn từ firebase -->
+        <service
+            android:name=".Service.FirebaseMessagerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

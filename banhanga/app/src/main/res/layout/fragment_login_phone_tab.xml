@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.LoginPhoneTabFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/edt_phone_number"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Số điện thoại"
+                android:inputType="phone"
+                android:drawableStart="@drawable/ic_baseline_smartphone_24"
+                android:drawableTint="@color/lavender"
+                android:drawablePadding="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/edittext_bkg"
+                tools:targetApi="m" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/btnVerify_phone_number"
+                android:textSize="16sp"
+                android:text="Đăng nhập bằng OTP"
+                app:cornerRadius="30dp" />
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Nếu chưa có tài khoản?"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_marginLeft="5dp"
+                    android:text="Đăng ký"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="Quên mật khẩu"
+                android:textColor="@color/colortext"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/tv_reset_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

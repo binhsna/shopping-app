@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_content_main"
+            android:title="@string/content_main">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_baseline_home"
+                    android:title="@string/nav_home" />
+                <item
+                    android:id="@+id/nav_favorite"
+                    android:icon="@drawable/ic_baseline_favorite"
+                    android:title="@string/nav_favorite" />
+                <item
+                    android:id="@+id/nav_order"
+                    android:icon="@drawable/ic_baseline_assignment"
+                    android:title="@string/nav_order" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_content_contact"
+            android:title="@string/contact">
+            <menu>
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_baseline_contact_page_24"
+                    android:title="@string/information" />
+                <item
+                    android:id="@+id/nav_message"
+                    android:icon="@drawable/ic_baseline_send_24"
+                    android:title="@string/message" />
+                <item
+                    android:id="@+id/nav_meeting"
+                    android:icon="@drawable/ic_baseline_videocam_24"
+                    android:title="@string/meeting" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_content_account"
+            android:title="@string/nav_account">
+            <menu>
+                <item
+                    android:id="@+id/nav_my_profile"
+                    android:icon="@drawable/ic_my_profile"
+                    android:title="@string/nav_my_profile" />
+                <item
+                    android:id="@+id/nav_change_password"
+                    android:icon="@drawable/ic_baseline_lock"
+                    android:title="@string/nav_change_password" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    android:title="@string/nav_logout" />
+            </menu>
+        </item>
+    </group>
+</menu>

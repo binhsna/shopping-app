@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_sanpham"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/image_no_available" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/img_sanpham"
+            android:layout_toStartOf="@id/img_add_to_cart"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ten_sp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Tên sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_gia"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:text="10000đ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_add_to_cart"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_cart_white_24"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_red_corner_6"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

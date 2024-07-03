@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/tk_thang"
+        android:title="@string/statistical_revenue_month"
+        app:showAsAction="collapseActionView"/>
+    <item android:title="@string/statistical_product"
+        android:id="@+id/tk_ban_chay"/>
+</menu>
